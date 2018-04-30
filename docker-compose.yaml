@@ -14,6 +14,8 @@ services:
       - /etc/localtime:/etc/localtime
     devices:
       - /dev/video0:/dev/video0
+#    networks:
+#      - me_nw
     restart: always
   
   ffmpeg:
@@ -23,6 +25,8 @@ services:
       - "5454:5454"
     devices:
       - /dev/video0:/dev/video0
+#    networks:
+#      - ff_nw
     restart: always
     
 volumes:
