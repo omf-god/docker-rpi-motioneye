@@ -18,16 +18,16 @@ services:
 #      - me_nw
     restart: always
   
-  ffmpeg:
-    image: jrottenberg/ffmpeg
-    container_name: ffmpeg
-    ports:
-      - "5454:5454"
-    devices:
-      - /dev/video0:/dev/video0
+#  ffmpeg:
+#    image: jrottenberg/ffmpeg
+#    container_name: ffmpeg
+#    ports:
+#      - "5454:5454"
+#    devices:
+#      - /dev/video0:/dev/video0
 #    networks:
 #      - ff_nw
-    restart: always
+#    restart: always
     
 volumes:
   recordings: {}
