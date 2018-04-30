@@ -1,7 +1,7 @@
 version: '2'
 services:
   motioneye:
-    image: ccrisan/motioneye
+    image: ccrisan/motioneye:dev-armhf
     container_name: motioneye
     ports:
       - "8765:8765"
