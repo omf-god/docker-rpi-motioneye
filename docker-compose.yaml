@@ -1,7 +1,7 @@
 version: '2'
 services:
   motioneye:
-    build: vividboarder/rpi-motioneye
+    image: vividboarder/rpi-motioneye
     container_name: motioneye
     ports:
       - "8765:8765"
