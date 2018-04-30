@@ -1,5 +1,6 @@
 version: '3'
 services:
+
   motioneye:
     image: ccrisan/motioneye:dev-armhf
     container_name: motioneye
@@ -14,5 +15,15 @@ services:
     devices:
       - /dev/video0:/dev/video0
     restart: always
+  
+  ffmpeg:
+    image: jrottenberg/ffmpeg
+    container_name: ffmpeg
+    ports:
+      - "5454:5454"
+    devices:
+      - /dev/video0:/dev/video0
+    restart: always
+    
 volumes:
   recordings: {}
