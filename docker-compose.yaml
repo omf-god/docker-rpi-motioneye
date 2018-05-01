@@ -7,14 +7,14 @@ services:
     ports:
       - "8765:8765"
       - "8091:8091"
-      - "7272:7272"
+ #     - "7272:7272"
     volumes:
       - recordings:/var/lib/motioneye
       - ./motion.conf:/etc/motion/motion.conf
       - ./data:/var/lib/motion
       - /etc/localtime:/etc/localtime
-#    devices:
-#      - /dev/video0:/dev/video0
+    devices:
+      - /dev/video0:/dev/video0
 #    networks:
 #      - me_nw
     restart: always
