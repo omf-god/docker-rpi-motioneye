@@ -10,7 +10,7 @@ services:
  #     - "7272:7272"
     volumes:
       - recordings:/var/lib/motioneye
-      - ./motion.conf:/etc/motion/motion.conf
+#      - ./motion.conf:/etc/motion/motion.conf
       - ./data:/var/lib/motion
       - /etc/localtime:/etc/localtime
     devices:
