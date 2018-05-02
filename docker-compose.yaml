@@ -14,7 +14,7 @@ services:
       - ./data:/var/lib/motion
       - /etc/localtime:/etc/localtime
     devices:
-      - /dev/video0:/dev/video0
+      - /dev/video1:/dev/video1
 #    networks:
 #      - me_nw
     restart: always
